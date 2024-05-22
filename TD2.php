@@ -12,7 +12,7 @@ function verifConsecutivite($tab) {
         }
     }
     
-    return true; 
+    return false; 
 }
 
 $tableau1 = [1, 2, 3, 4, 5];
