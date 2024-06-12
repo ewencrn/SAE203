@@ -11,12 +11,17 @@ include_once("header.php")
 <img src="<?=SITEROOT?>assets/pictures/bergamote.png" alt="Bergamote de Nancy" class="promote_img">
 </section>
 
-<section class="artisanat">
+<section class="artisanat ">
     <img src="<?=SITEROOT?>assets/pictures/artisant_nougat.jpg" alt="Image d'un de nos artisans au travail" class="img_artisant">
-    <div class="artisanat_right with-blur-backdrop">
+    <div class="artisanat_right ">
         <p class="text_artisant">Depuis 1847, notre maison prépare avec passion et savoir-faire toutes nos sucreries</p>
         <button class="button">En savoir plus</button>
     </div>
+</section>
+
+<section class="all_product">
+    
+
 
 
 </section>
