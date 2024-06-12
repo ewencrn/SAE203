@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 
@@ -19,7 +20,10 @@ nav{
     padding-right: 30px;
     background-color: white;
 }
-
+header{
+    position: sticky;
+    top: 0px
+}
 .logo{
     height: 100px;
 }
@@ -46,8 +50,32 @@ body{
 
 .promote_title{
     color: white;
+    margin-bottom: 100px;
 }
 
 .promote_img{
     width: 700px;
+}
+
+.artisanat{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 89vh;
+    background-image: url(../assets/pictures/artisant_nougat.jpg);
+    background-size: cover;
+    background-position: right 60% bottom 20%;
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px);
+     */
+}  
+
+.img_artisant{
+    height: 500px;
+    z-index: 3;
+}
+
+.with-blur-backdrop {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 }
