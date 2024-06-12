@@ -1,0 +1,27 @@
+.produit{
+    margin-left: 200px;
+    margin-top: 150px;
+    width: 307px;
+    height: 345px;
+    background-color: #F6F5F3;
+}
+
+#image{
+    width: 250px;
+    margin-left: 28.5px;
+    margin-top: 50px;
+}
+
+#nom{
+    font: "Montserrat";
+    font-size: 20px;
+    margin-left: 28.5px;
+    margin-top: 20px;
+}
+
+#présence{
+    font: "Montserrat";
+    font-size: 20px;
+    margin-left: 28.5px;
+    margin-top: 10px;
+}

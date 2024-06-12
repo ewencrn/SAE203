@@ -10,6 +10,7 @@ include_once("const.php")
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La confiserie</title>
     <link rel="stylesheet" href="<?=SITEROOT?>styles/style.css">
+    <link rel="stylesheet" href="<?=SITEROOT?>styles/produit.css">
 </head>
 <body>
     <header>
