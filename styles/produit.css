@@ -3,14 +3,20 @@
     margin-top: 150px;
     width: 307px;
     height: 345px;
-    background-color: #F6F5F3;
+    background-color: rgb(162, 159, 159);
+    transition: 0.5s;
+}
+
+.produit_bonbon:hover{
+    background-color: white;
+    filter: brightness(105%);
 }
 
 .image_bonbon{
     width: 250px;
     margin-left: 28.5px;
     margin-top: 50px;
-    transition: 1.2s;
+    transition: 0.5s;
 }
 
 .produit_bonbon:hover .image_bonbon{
@@ -19,11 +25,11 @@
 }
 
 .nom_bonbon{
-    font: "Montserrat";
+    font-family: "Montserrat";
     font-size: 20px;
     margin-left: 28.5px;
     margin-top: 20px;
-    transition: 1.2s;
+    transition: 0.5s;
     display: inline-block;
 }
 
@@ -32,11 +38,11 @@
 }
 
 .stock_bonbon{
-    font: "Montserrat";
+    font-family: "Montserrat";
     font-size: 20px;
     margin-left: 28.5px;
     margin-top: 10px;
-    transition: 1.2s;
+    transition: 0.5s;
 }
 
 .produit_bonbon:hover .stock_bonbon{
