@@ -28,7 +28,9 @@ include_once("const.php")
                 <a>Boutiques</a>
                 <a><img src="<?=SITEROOT?>assets/pictures/logo_background.png" alt="Logo du site La confiserie" class="logo"></a>
                 <a>Notre histoire</a>
-                <img src="<?=SITEROOT?>assets/icons/cart2.png" alt="Icone panier">
+                <img src="<?=SITEROOT?>assets/icons/cart.png" alt="Icone panier">
+                <img src="<?=SITEROOT?>assets/icons/profil.png" alt="Se connecter">
+                
         </nav>
     </header>
 

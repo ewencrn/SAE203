@@ -4,9 +4,6 @@
 }
 
 
-li{
-    list-style-type: none;
-}
 
 .burger{
     height: 30px;
@@ -16,10 +13,41 @@ li{
 nav{
     display: flex;
     flex-direction:row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: white;
 }
 
 .logo{
     height: 100px;
+}
+
+body{
+    background-color: black;
+}
+
+.promote{
+    width: 100%;
+    height: 89vh;
+    background-image: url(../assets/pictures/fond_luxe.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.promote_left{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.promote_title{
+    color: white;
+}
+
+.promote_img{
+    width: 700px;
 }
