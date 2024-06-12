@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+.burger{
+    height: 30px;
+    width: 30px;
+}
+
+nav{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo{
+    height: 100px;
+}
