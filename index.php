@@ -20,8 +20,34 @@ include_once("header.php")
 </section>
 
 <section class="all_product">
-    
 
+<div class="all_product_left">
+    <h2>Découvrer nos produits</h2>
+
+    <div class="link">
+    <div class="line"></div>
+    <p>Nougats</p>
+    </div>
+
+    <div class="link">
+    <div class="line"></div>
+    <p>Caramels</p>
+    </div>
+
+    <div class="link">
+    <div class="line"></div>
+    <p>Sucettes</p>
+    </div>
+    <div class="link">
+    <div class="line"></div>
+    <p>Guimauves</p>
+    </div>
+</div>
+
+<div class="all_product_right">
+    <div class="radial"></div>
+    <img src="<?=SITEROOT?>assets/pictures/bergamote.png" alt="Image d'une bergamote" class="img_product">
+</div>
 
 
 </section>
