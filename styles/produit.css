@@ -3,11 +3,15 @@
     width: 1550px;
     height: 1260px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     width: 100%;
 }
-
+.produit_top{
+    display: flex;
+    flex-direction: row;
+}
 .img_produit{
     width: 500px;
     height: 500px;
@@ -21,4 +25,32 @@
 .nom_produit{
     font-size: 64px;
 }
+
+.histoire{
+    color: white;
+    font-family: "Jacques Francois";
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.id{
+
+}
+
+.quantite{
+
+}
+
+.prix{
+
+}
+
+.prix{
+
+}
+
+.par_kg{
+    
+}
+
 
