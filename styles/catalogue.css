@@ -1,0 +1,50 @@
+.produit_bonbon{
+    margin-left: 200px;
+    margin-top: 150px;
+    width: 307px;
+    height: 345px;
+    background-color: rgb(162, 159, 159);
+    transition: 0.5s;
+}
+
+.produit_bonbon:hover{
+    background-color: white;
+    filter: brightness(105%);
+}
+
+.image_bonbon{
+    width: 250px;
+    margin-left: 28.5px;
+    margin-top: 50px;
+    transition: 0.5s;
+}
+
+.produit_bonbon:hover .image_bonbon{
+    transform:scale(1.3) ;
+
+}
+
+.nom_bonbon{
+    font-family: "Montserrat";
+    font-size: 20px;
+    margin-left: 28.5px;
+    margin-top: 20px;
+    transition: 0.5s;
+    display: inline-block;
+}
+
+.produit_bonbon:hover .nom_bonbon{
+    transform:translateY(25px);
+}
+
+.stock_bonbon{
+    font-family: "Montserrat";
+    font-size: 20px;
+    margin-left: 28.5px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.produit_bonbon:hover .stock_bonbon{
+    transform:translateY(25px);
+}
