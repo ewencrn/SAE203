@@ -1,6 +1,7 @@
 <?php 
 include_once("const.php");
 include_once("functions.php");
+session_start()
 ?>
 
 
@@ -13,6 +14,7 @@ include_once("functions.php");
     <link rel="stylesheet" href="<?=SITEROOT?>styles/style.css">
     <link rel="stylesheet" href="<?=SITEROOT?>styles/catalogue.css">
     <link rel="stylesheet" href="<?=SITEROOT?>styles/produit.css">
+    <link rel="stylesheet" href="<?=SITEROOT?>styles/boutiques.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,12 +38,25 @@ include_once("functions.php");
                 <line class="hand hand-3" x1="100" y1="100" x2="200" y2="100" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke" style="translate: none; rotate: none; scale: none; transform-origin: 0px 0px;" data-svg-origin="100 100" transform="matrix(1,0,0,1,0,0)"></line>
                 </g>
                 </svg>
-                <a>Produits</a>
-                <a>Boutiques</a>
-                <a><img src="<?=SITEROOT?>assets/pictures/logo_background.png" alt="Logo du site La confiserie" class="logo"></a>
+                <a href="<?=SITEROOT?>catalogue.php">Produits</a>
+                <a href="<?=SITEROOT?>boutiques.php">Boutiques</a>
+                <a href="<?=SITEROOT?>index.php"><img src="<?=SITEROOT?>assets/pictures/logo_background.png" alt="Logo du site La confiserie" class="logo"></a>
                 <a>Notre histoire</a>
+                <?php
+                    if(isset($_SESSION["loggedin"]) AND $_SESSION["role"]==="gerant"){
+                        echo("<a>Gérer votre boutique</a>");
+                    }
+                ?>
                 <img src="<?=SITEROOT?>assets/icons/cart.png" alt="Icone panier">
-                <img src="<?=SITEROOT?>assets/icons/profil.png" alt="Se connecter">
+                <?php
+                if(isset($_SESSION["role"])){
+                    echo('<a href="'.SITEROOT.'login/disconnect.php"><img src="'.SITEROOT.'assets/icons/deconnect.png" alt="Se Déconnecter"></a>');
+
+                }
+                else {
+                    echo('<a href="'.SITEROOT.'login/login.php"><img src="'.SITEROOT.'assets/icons/profil.png" alt="Se connecter"></a>');
+                }
+                ?>
                 
         </nav>
     </header>

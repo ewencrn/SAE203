@@ -2,7 +2,9 @@
 include_once("header.php")
 
 ?>
-
+<?php
+print_r($_SESSION)
+?>
 <section class="promote">
 <div class="promote_left">
     <h1 class="promote_title">Bergamote de Nancy</h1>
