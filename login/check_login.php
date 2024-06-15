@@ -18,6 +18,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION["role"] = $result["role"];
         $_SESSION['loggedin'] = true;
         $_SESSION['id']=$result['id'];
+        if($result["role"]==="gerant"){
+            $boutique_info= get_boutique_by_id($_SESSION['id']);
+            $_SESSION["boutique_id"]=$boutique_info[0]["id"];
+        }
         header("location:../boutiques.php");
         exit;
     } 

@@ -44,7 +44,7 @@ session_start()
                 <a>Notre histoire</a>
                 <?php
                     if(isset($_SESSION["loggedin"]) AND $_SESSION["role"]==="gerant"){
-                        echo("<a>Gérer votre boutique</a>");
+                        echo("<a href=".SITEROOT."gestion.php>Gérer votre boutique</a>");
                     }
                 ?>
                 <img src="<?=SITEROOT?>assets/icons/cart.png" alt="Icone panier">
