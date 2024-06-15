@@ -3,11 +3,15 @@
     width: 1550px;
     height: 1260px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     width: 100%;
 }
-
+.produit_top{
+    display: flex;
+    flex-direction: row;
+}
 .img_produit{
     width: 500px;
     height: 500px;
@@ -22,29 +26,31 @@
     font-size: 64px;
 }
 
-.nom_bonbon{
-    font-family: "Montserrat";
-    font-size: 20px;
-    margin-left: 28.5px;
-    margin-top: 20px;
-    transition: 0.5s;
-    display: inline-block;
+.histoire{
+    color: white;
+    font-family: "Jacques Francois";
+    font-size: 24px;
+    margin-top: 0px;
 }
 
-.produit_bonbon:hover .nom_bonbon{
-    transform:translateY(25px);
-    color: black;
+.id{
+    font-family: "Jacques Francois";
 }
 
-.stock_bonbon{
-    font-family: "Montserrat";
-    font-size: 20px;
-    margin-left: 28.5px;
-    margin-top: 10px;
-    transition: 0.5s;
+.quantite{
+    font-family: "Jacques Francois";
 }
 
-.produit_bonbon:hover .stock_bonbon{
-    transform:translateY(25px);
-    color: black;
+.prix{
+    font-family: "Jacques Francois";
 }
+
+.prix{
+    font-family: "Jacques Francois";
+}
+
+.par_kg{
+    font-family: "Jacques Francois";    
+}
+
+
