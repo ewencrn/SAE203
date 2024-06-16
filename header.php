@@ -38,8 +38,8 @@ session_start()
                 <line class="hand hand-3" x1="100" y1="100" x2="200" y2="100" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke" style="translate: none; rotate: none; scale: none; transform-origin: 0px 0px;" data-svg-origin="100 100" transform="matrix(1,0,0,1,0,0)"></line>
                 </g>
                 </svg>
-                <a href="<?=SITEROOT?>catalogue.php">Produits</a>
-                <a href="<?=SITEROOT?>boutiques.php">Boutiques</a>
+                <a href="<?=SITEROOT?>catalogue.php" class="produit_nav">Produits</a>
+                <a href="<?=SITEROOT?>boutiques.php" class="boutiques_nav">Boutiques</a>
                 <a href="<?=SITEROOT?>index.php"><img src="<?=SITEROOT?>assets/pictures/logo_background.png" alt="Logo du site La confiserie" class="logo"></a>
                 <a>Notre histoire</a>
                 <?php
