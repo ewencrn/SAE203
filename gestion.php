@@ -46,3 +46,17 @@ foreach($stock as $oneStock){
 }
 ?>
 
+<label for="confiserie">Ajouter d'autres produits : </label>
+<form method="post" action="script_gestion_stock.php">
+    <select name="confiserie_id" required>
+        <?php 
+        $confiseries = get_all_confis();
+        foreach ($confiseries as $confiserie) { ?>
+            <option value="<?= $confiserie['id'] ?>"><?= $confiserie['nom'] ?></option>
+        <?php } ?>
+    </select>
+    <label for="quantite"> Quantité à ajouter :</label>
+    <input type="number" name="quantite" required>
+    <button type="submit" name="action" value="ajouter">Ajouter à la boutique</button>
+</form>
+
