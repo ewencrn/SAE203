@@ -1,5 +1,5 @@
 <?php include_once("header.php") ?>
-
+<div class="container">
 <?php
 if (isset($_GET["boutique"])){
 $allProductFromBoutique = get_confis_boutique($_GET["boutique"]);
@@ -36,5 +36,5 @@ else {
     exit;
 }
 ?>
-?>
+</div>
 

@@ -22,7 +22,9 @@ nav{
 }
 header{
     position: sticky;
-    top: 0px
+    top: 0px;
+    z-index: 100;
+    width: 100%;    
 }
 .logo{
     height: 100px;
