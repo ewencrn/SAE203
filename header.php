@@ -46,6 +46,9 @@ session_start()
                     if(isset($_SESSION["loggedin"]) AND $_SESSION["role"]==="gerant"){
                         echo("<a href=".SITEROOT."gestion.php>Gérer votre boutique</a>");
                     }
+                    elseif(isset($_SESSION["loggedin"]) AND $_SESSION["role"]==="admin"){
+                        echo("<a href=".SITEROOT."admin.php>Panel d'administration</a>");
+                    }
                 ?>
                 <img src="<?=SITEROOT?>assets/icons/cart.png" alt="Icone panier">
                 <?php
