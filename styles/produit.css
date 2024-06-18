@@ -13,8 +13,8 @@
     flex-direction: row;
 }
 .img_produit{
-    width: 500px;
-    height: 500px;
+    width: 550px;
+    margin-left: 300px;
 }
 
 .texte_produit{
@@ -35,23 +35,30 @@
 
 .id{
     font-family: "Jacques Francois";
-    margin-top: 10px;
+    margin-top: 30px;
+    font-size: 20px;
 }
 
-.quantite{
+.type{
     font-family: "Jacques Francois";
+    font-size: 20px;
+
 }
 
 .prix{
-    font-family: "Jacques Francois";
+    font-family: "Montserrat";
+    border: 2px solid rgb(255, 255, 255);
+    padding: 8px;
+    width: fit-content;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-.prix{
-    font-family: "Jacques Francois";
-}
 
-.par_kg{
-    font-family: "Jacques Francois";    
+.description{
+    font-family: "Jacques Francois";  
+    font-size: 20px;  
 }
 
 

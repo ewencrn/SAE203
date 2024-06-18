@@ -12,16 +12,16 @@ include_once("header.php")
     
     <section class="one_boutique">
         <div class="one_boutique_left">
-        <h3>
+        <h3 class="nom_boutique">
             <?=$boutique["nom"]?>
         </h3>
-        <p>
+        <p class="rue_boutique">
             <?=$boutique["numero_rue"]." ".$boutique["nom_adresse"]?>
         </p>
-        <p>
-                <?=$boutique["code_postal"]." ".$boutique["ville"] ?>
+        <p class="cp_boutique">
+            <?=$boutique["code_postal"]." ".$boutique["ville"] ?>
         </p>
-        <a href="<?=SITEROOT?>catalogue.php?boutique=<?=$boutique["id"]?>">Choisir cette boutique</a>
+        <a class="choix_boutique" href="<?=SITEROOT?>catalogue.php?boutique=<?=$boutique["id"]?>">Choisir cette boutique</a>
         </div>
         <div class="one_boutique_right">
             <img src="<?=SITEROOT?>assets/pictures/boutique.jpeg" alt="Photo de la boutique Mika Line" class="boutique_img">

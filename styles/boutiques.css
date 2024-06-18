@@ -30,3 +30,36 @@
 .test{
     background-color: brown;
 }
+
+.nom_boutique{
+    font-family: 'Allura';
+    margin-left: 50px;
+    margin-bottom: 30px;
+    font-size: 48px;
+}
+
+.rue_boutique{
+    font-family: 'Quicksand';
+    margin-left: 50px;
+}
+
+.cp_boutique{
+    font-family: 'Quicksand';
+    margin-left: 50px;
+}
+
+.choix_boutique{
+    font-family: 'Quicksand';
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    transition: transform 0.2s;
+    margin-top: 30px;
+}
+
+.choix_boutique:hover{
+    color: black;
+    transform: scale(1.1);
+
+}
+

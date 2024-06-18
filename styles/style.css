@@ -19,7 +19,27 @@ nav{
     padding-left: 30px;
     padding-right: 30px;
     background-color: white;
+    font-size: 24px;
+    font-family: 'Jacques Francois';
 }
+
+.produit_nav{
+    text-decoration: none;
+    color: #060709;
+}
+
+.boutiques_nav{
+    text-decoration: none;
+    color: #060709;
+}
+
+.promote_title{
+    font-size: 48px;
+    font-family: 'Jacques Francois';
+    font-weight: 200;
+}
+
+
 header{
     position: sticky;
     top: 0px;
@@ -93,13 +113,22 @@ body{
 }
 
 .img_artisant {
-    width: 700px;
+    width: 642px;
+    height: 545px;
+    margin-left: 100px;
 }
 
 .text_artisant{
-    font-size: 52px;
+    font-size: 32px;
     font-family: "Jacques Francois";
+    margin-right: 150px;
+    margin-left: 110px;
 
+}
+
+#b_esp{
+    margin-left: 110px;
+    margin-top: 50px;
 }
 
 
@@ -156,28 +185,38 @@ p{
     align-items: center;
 }
 
+.titre_all_product_left{
+    font-family: 'Jacques Francois';
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+
 .all_product_left{
 display: flex;
 flex-direction: column; 
-gap: 20px;   
+gap: 20px;
+font-size: 28px;  
+font-family: 'Aboreto'; 
 }
+
 
 form{
     background-color: white;
 }
 
-#button{
+
+
+.button{
     background-color: transparent; 
             border: 2px solid white; 
             color: white;
+            font-family: 'Aboreto';
             padding: 10px 20px;
-            font-size: 16px;
+            font-size: 20px;
             cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
+            transition: transform 0.3s;
         }
 
-        .transparent-button:hover {
-            background-color: white;
-            color: black;
+.button:hover {
+            transform: scale(1.1);
 }

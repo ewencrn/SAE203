@@ -15,14 +15,14 @@ include_once("header.php")
     <img src="<?=SITEROOT?>assets/pictures/artisant_nougat.jpg" alt="Image d'un de nos artisans au travail" class="img_artisant">
     <div class="artisanat_right ">
         <p class="text_artisant">Depuis 1847, notre maison prépare avec passion et savoir-faire toutes nos sucreries</p>
-        <button class="button" id="b_esp">En savoir plus</button>
+        <button class="button" id="b_esp">EN SAVOIR PLUS</button>
     </div>
 </section>
 
 <section class="all_product">
 
 <div class="all_product_left">
-    <h2>Découvrer nos produits</h2>
+    <h2 class="titre_all_product_left">Découvrez nos produits</h2>
 
     <div class="link">
     <div class="line"></div>

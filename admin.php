@@ -23,10 +23,10 @@ if(isset($_SESSION['message'])){ ?>
 ?>
 
 <form method="post" action="<?=SITEROOT?>login/check_login.php">
-    <label for="username">Username :</label>
+    <label class="username" for="username">Username :</label>
         <input type="text" name="username" required>
 
-    <label for="password">Mot de passe :</label>
+    <label class="mdp" for="password">Mot de passe :</label>
     <input type="password" name="password" required>
 
     <label for="email">Adresse mail :</label>
@@ -47,7 +47,7 @@ if(isset($_SESSION['message'])){ ?>
 
     <label for="ddn">Date de naissance :</label>
     <input type="date" name="ddn" required>
-    <button type="submit" value="add_user" name="action">Ajouter l'utilisateur</button>
+    <button class="button" type="submit" value="add_user" name="action">Ajouter l'utilisateur</button>
 </form>
 
 <h2>Voici toutes les boutiques : </h2>
