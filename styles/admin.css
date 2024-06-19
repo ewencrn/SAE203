@@ -1,4 +1,113 @@
-.username{
-    font-family: "Montserrat";
-    font-size: 16px;
+.one_boutique{
+    display: flex;
+    background-color: grey;
+    width: 75% ;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.boutique_img{
+    width: 500px;
+}
+
+.all_boutique{
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boutique_left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+
+}
+.test{
+    background-color: brown;
+}
+
+.nom{
+    font-family: 'Allura';
+    margin-left: 50px;
+    margin-bottom: 30px;
+    font-size: 48px;
+}
+
+.numero_rue{
+    font-family: 'Quicksand';
+    margin-left: 50px;
+}
+
+.nom_adresse{
+    font-family: 'Quicksand';
+    margin-left: 50px;
+}
+
+.choix_boutique{
+    font-family: 'Quicksand';
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    transition: transform 0.2s;
+    margin-top: 30px;
+}
+
+.choix_boutique:hover{
+    color: black;
+    transform: scale(1.1);
+
+}
+
+.mdp{
+    font-family: 'Montserrat';
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.ajt{
+    font-family: 'Jacques Francois';
+}
+
+.button_ajt{
+    background-color: transparent; 
+    border: 1px solid rgb(1, 1, 1); 
+    color: rgb(0, 0, 0);
+    font-family: 'Aboreto';
+    padding: 8px 18px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.button:hover {
+    transform: scale(0.9);
+}
+
+.ajt_utilisateur{
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+}
+
+.role_choix{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.donnee_ajt{
+    margin-top: 20px;
+
+}
+
+#type{
+    border: 1px solid #000000;
+    background-color: transparent;
+    transition: border-color 0.3s;
+    font-family: 'Montserrat';
+    color: #000000;
 }

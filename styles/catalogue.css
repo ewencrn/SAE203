@@ -76,18 +76,28 @@
 .filter-bar label {
     margin-right: 10px;
     font-weight: bold;
+    font-family: 'Montserrat';
 }
 
 .filter-bar select {
     margin-right: 20px;
     padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #f9f9f9;
+    border: 1px solid #ffffff;
+    background-color: transparent;
     transition: border-color 0.3s;
+    font-family: 'Montserrat';
+    color: #ffffff;
+
 }
 
 .filter-bar select:focus {
-    border-color: #007bff;
+    border-color: #b6bbc1;
     outline: none;
+    font-family: 'Montserrat';
+    background-color: transparent;
+}
+
+.filter-type{
+    font-family: 'Montserrat';
+    color: white;
 }

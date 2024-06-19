@@ -10,13 +10,12 @@ if (!isset($_GET["boutique"])) {
 include_once ("header.php");
 ?>
 <div class="filter-bar">
-    <p>Afficher : </p>
-    <label for="filter-stock">Afficher :</label>
+    <label class="filter-type" for="filter-stock">Afficher :</label>
     <select id="filter-stock">
         <option value="all">Tous</option>
         <option value="in-stock">En stock</option>
     </select>
-    <label for="filter-type">Type :</label>
+    <label class="filter-type" for="filter-type">Type :</label>
     <select id="filter-type">
         <option value="all">Tous</option>
         <option value="Acide">Acide</option>
