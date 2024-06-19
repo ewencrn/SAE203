@@ -9,6 +9,7 @@
 
 .boutique_img{
     width: 500px;
+    height: 335px;
 }
 
 .all_boutique{
@@ -18,6 +19,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .boutique_left{
@@ -62,4 +64,6 @@
     transform: scale(1.1);
 
 }
+
+
 

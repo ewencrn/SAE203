@@ -59,6 +59,8 @@ if(isset($_SESSION['message'])){ ?>
 
 <h2 class="ajt">Voici toutes les boutiques : </h2>
 
+<div class="all_boutique">
+
 <?php
 $boutiques = get_all_boutique();
 
@@ -85,6 +87,7 @@ foreach($boutiques as $boutique){ ?>
 <?php
 }
 ?>
+</div>
 
 <h2 class="ajt">Ajouter une boutique</h2>
 
