@@ -27,14 +27,21 @@ if(isset($_SESSION['message'])){ ?>
 
 <form class="ajt_utilisateur" method="post" action="<?=SITEROOT?>login/check_login.php">
     <div class="donnee_ajt">
+    
+    <div class="role_choix">
     <label class="mdp" for="username">Username :</label>
         <input type="text" name="username" required>
+</div>
 
+        <div class="role_choix">
     <label class="mdp" for="password">Mot de passe :</label>
     <input type="password" name="password" required>
+</div>
 
+    <div class="role_choix">
     <label class="mdp" for="email">Adresse mail :</label>
     <input type="email" name="email" required>
+</div>
 
     <div class="role_choix">
     <label class="mdp" for="role">Role : </label>
@@ -45,16 +52,26 @@ if(isset($_SESSION['message'])){ ?>
     </select>
 </div>
 
+<div class="role_choix">
     <label class="mdp" for="name">Nom :</label>
     <input type="text" name="name">
+</div>
 
+<div class="role_choix">
     <label class="mdp" for="prenom">Prénom :</label>
     <input type="text" name="prenom" required>
+</div>
 
+<div class="role_choix">
     <label class="mdp" for="ddn">Date de naissance :</label>
     <input type="date" name="ddn" required>
+</div>
+
+<div class="role_choix">
     <button class="button_ajt" type="submit" value="add_user" name="action">Ajouter l'utilisateur</button>
-    </div>
+</div>
+
+</div>
 </form>
 
 <h2 class="ajt">Voici toutes les boutiques : </h2>
@@ -92,12 +109,19 @@ foreach($boutiques as $boutique){ ?>
 <h2 class="ajt">Ajouter une boutique</h2>
 
 <form method="post" action="script_admin.php">
+
+<div class="role_choix">
     <label class="mdp"for="nom">Nom de la boutique :</label>
     <input type="text" name="nom" required>
+</div>
 
+<div class="role_choix">
     <label class="mdp" for="utilisateur_id">Sélectionner le gérant : </label>
     <select id="type" name="utilisateur_id" id="utilisateur_id" required>
+</div>
 
+
+<div class="role_choix">
     <?php
     $all_gerant = select_all_gerant();
     foreach($all_gerant as $gerant){?>
@@ -106,28 +130,42 @@ foreach($boutiques as $boutique){ ?>
     }
     ?>
     </select>
-
+</div>
     
+<div class="role_choix">
     <label class="mdp" for="numero_rue">Numéro de rue :</label>
     <input type="number" name="numero_rue" required>
+</div>
+
+
 <div class="role_choix">
     <label class="mdp" for="nom_adresse">Nom de l'adresse :</label>
     <input type="text" name="nom_adresse" required>
 </div>
+
+<div class="role_choix">
     <label class="mdp" for="code_postal">Code postal :</label>
     <input type="number" name="code_postal" required>
+</div>
 
+<div class="role_choix">
     <label class="mdp" for="ville">Ville :</label>
     <input type="text" name="ville" required>
+</div>
 
+<div class="role_choix">
     <label class="mdp"for="pays">Pays :</label>
     <input type="text" name="pays" required>
     <button class="button_ajt" type="submit" value="add_boutique" name="action">Ajouter la boutique</button>
+</div>
 
 </form>
 
 <h2 class="ajt">Modifier la liste des bonbons disponibles pour les boutiques :</h2>
+<div class="modif">
 <form method="post" action="script_admin.php">
+
+<div class="role_choix">
 <label class="mdp" for="confiserie">Sélectionner un bonbon : </label>
 <select name="confiserie" id="type">
     <?php
@@ -138,13 +176,21 @@ foreach($boutiques as $boutique){ ?>
     }
     ?>
 </select>
-<button class="button_ajt" type="submit" name="action" value="delete_bonbon">Supprimer</button>
-</form>
 
+<div class="role_choix">
+<button class="button_supp" type="submit" name="action" value="delete_bonbon">Supprimer</button>
+</div>
+
+</form>
+</div>
+
+<div class="role_choix">
 <form method="post" action="script_admin.php">
     <label class="mdp" for="nom">Nom :</label>
     <input type="text" name="nom" required>
+</div>
 
+<div class="role_choix">
     <label class="mdp" for="type">Type :</label>
     <select class="button_choix_admin" nom="type" id="type" required>
         <option value="Acide">Acide</option>
@@ -155,16 +201,23 @@ foreach($boutiques as $boutique){ ?>
         <option value="Fruité">Fruité</option>
         <option value="Frais">Frais</option>
     </select>
+</div>  
 
+<div class="role_choix">
     <label class="mdp" for="prix">Prix :</label>
     <input type="number" name="prix" required>
+</div>
 
+<div class="role_choix">
     <label class="mdp" for="description">Description : </label>
     <input type="text" name="description">
+</div>
 
+<div class="role_choix">
     <button class="button_ajt" type="submit" name="action" value="add_bonbon">Ajouter le produit</button>
-
+</div>
 
 </form>
+</div>
 
 <?php } ?>

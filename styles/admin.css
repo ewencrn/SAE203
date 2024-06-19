@@ -29,7 +29,7 @@
 
 }
 .test{
-    background-color: brown;
+    background-color: rgb(255, 255, 255);
 }
 
 .nom{
@@ -72,6 +72,8 @@
 
 .ajt{
     font-family: 'Jacques Francois';
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .button_ajt{
@@ -83,6 +85,7 @@
     font-size: 12px;
     cursor: pointer;
     transition: transform 0.3s;
+    margin-left: 100px;
 }
 
 .button:hover {
@@ -91,16 +94,22 @@
 
 .ajt_utilisateur{
     background-color: rgb(255, 255, 255);
-    height: 200px;
+    width: 500px;
+    height: 350px;
+    align-items: center;
 }
 
 .role_choix{
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 500px;
 }
 
 .donnee_ajt{
     margin-top: 20px;
+    height: 350px;
+    width: 1580px;
+    background-color: white;
 
 }
 
@@ -110,4 +119,24 @@
     transition: border-color 0.3s;
     font-family: 'Montserrat';
     color: #000000;
+}
+
+.modif{
+    margin-top: 20px;
+    height: 350px;
+    width: 1580px;
+    background-color: white;
+
+}
+
+.button_supp{
+    background-color: transparent; 
+    border: 1px solid rgb(1, 1, 1); 
+    color: rgb(0, 0, 0);
+    font-family: 'Aboreto';
+    padding: 8px 18px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin-right: 1000px;
 }
