@@ -1,5 +1,5 @@
 <?php
-include_once("../header.php")
+include_once("../header.php");
 ?>
 <h2>Se connecter</h2>
 <div class="test">
@@ -11,7 +11,7 @@ include_once("../header.php")
     <input type="submit" name='action' value="login">
 
 </form>
-
+ 
 <?php if(isset($_SESSION["message"])){
 echo("<p>".$_SESSION["message"]."</p>");
 unset($_SESSION["message"]);

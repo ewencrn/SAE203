@@ -1,6 +1,8 @@
 <?php
-include_once('header.php');
-include_once('db.php');
+if(session_status() != PHP_SESSION_ACTIVE){
+    session_start();
+    }
+
 
 if(isset($_SESSION["role"])){
     if($_SESSION["role"]!="gerant"){
@@ -10,7 +12,8 @@ if(isset($_SESSION["role"])){
 else{
     header("location:".SITEROOT."index.php");
 }
-
+include_once('header.php');
+include_once('db.php');
 get_stock_boutique($_SESSION["boutique_id"]);
 
 ?>

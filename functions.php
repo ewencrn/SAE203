@@ -153,8 +153,7 @@ function select_all_gerant()
     return $all_gerant;
 }
 
-function add_boutique($nom, $utilisateur_id, $numero_rue, $nom_adresse, $code_postal, $ville, $pays)
-{
+function add_boutique($nom, $utilisateur_id, $numero_rue, $nom_adresse, $code_postal, $ville, $pays){
 
     global $PDO;
     $checkStmt = $PDO->prepare("SELECT COUNT(*) FROM boutiques WHERE nom = :nom");
@@ -182,6 +181,46 @@ function add_boutique($nom, $utilisateur_id, $numero_rue, $nom_adresse, $code_po
         return "Erreur lors de l'ajout de la boutique";
     }
 }
+
+
+function remove_product_from_all($produit_id){
+    try{
+    requete("DELETE FROM confiseries where id LIKE $produit_id");
+    return "Bonbon supprimé avec succès";
+}catch(PDOException $e) {
+    return "Erreur lors de la suppression du bonbon";
+}
+}
+
+function add_bonbon($nom, $type, $prix, $description){
+
+    global $PDO;
+    $checkStmt = $PDO->prepare("SELECT COUNT(*) FROM confiseries WHERE nom = :nom");
+    $checkStmt->bindParam(':nom', $nom);
+    $checkStmt->execute();
+    $count = $checkStmt->fetchColumn();
+
+    if ($count > 0) {
+        return "Erreur : Le bonbon existe déjà.";
+    }
+    try {
+        $stmt = $PDO->prepare("INSERT INTO confiseries (nom, type, prix, description) VALUES (:nom, :type, :prix, :description)");
+        $stmt->bindParam(':nom', $nom);
+        $stmt->bindParam(':type', $type);
+        $stmt->bindParam(':prix', $prix);
+        $stmt->bindParam(':description', $description);
+
+
+        $stmt->execute();
+
+        return "Le bonb a été ajouté avec succès.";
+    } catch (PDOException $e) {
+        return "Erreur lors de l'ajout du bonbon";
+    }
+}
+
+
+
 
 
 

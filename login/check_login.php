@@ -1,12 +1,11 @@
 <?php
-include_once("../db.php");
-include_once("../header.php");
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    session_start();
+    include_once("../db.php");
+    include_once("../functions.php");
     if($_POST['action']==='login'){
     $username = $_POST['nom'];
     $mdp = md5($_POST['mdp']);
-
 
     global $PDO;
     $stmt = $PDO->prepare("SELECT * FROM utilisateurs WHERE username = :username AND password = :password");

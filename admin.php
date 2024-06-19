@@ -1,17 +1,20 @@
 <?php
-include_once("header.php");
+if(session_status() != PHP_SESSION_ACTIVE){
+    session_start();
+    }
+include_once("const.php");
 include_once("db.php");
-
-
-
-if(isset($_SESSION["role"])){
+if(!isset($_SESSION["role"])){
+    header("location:".SITEROOT."index.php");
+}
+else{
     if($_SESSION["role"]!="admin"){
         header("location:".SITEROOT."index.php");
     }
-}
-else{
-    header("location:".SITEROOT."index.php");
-}
+
+
+
+include_once('header.php')
 ?>
 <h2>Ajouter des utilisateurs</h2>
 <?php
@@ -117,7 +120,8 @@ foreach($boutiques as $boutique){ ?>
 </form>
 
 <h2>Modifier la liste des bonbons disponibles pour les boutiques :</h2>
-<label for="confiserie">Sélectionner un bonbon</label>
+<form method="post" action="script_admin.php">
+<label for="confiserie">Sélectionner un bonbon : </label>
 <select name="confiserie" id="confiserie">
     <?php
     $confiseries = get_all_confis();
@@ -126,6 +130,34 @@ foreach($boutiques as $boutique){ ?>
     <?php
     }
     ?>
-
-
 </select>
+<button type="submit" name="action" value="delete_bonbon">Supprimer</button>
+</form>
+
+<form method="post" action="script_admin.php">
+    <label for="nom">Nom :</label>
+    <input type="text" name="nom" required>
+
+    <label for="type">Type :</label>
+    <select nom="type" id="type" required>
+        <option value="Acide">Acide</option>
+        <option value="Chocolat">Chocolat</option>
+        <option value="Douceur">Douceur</option>
+        <option value="Classique">Classique</option>
+        <option value="Gourmandise">Gourmandise</option>
+        <option value="Fruité">Fruité</option>
+        <option value="Frais">Frais</option>
+    </select>
+
+    <label for="prix">Prix :</label>
+    <input type="number" name="prix" required>
+
+    <label for="description">Description : </label>
+    <input type="text" name="description">
+
+    <button type="submit" name="action" value="add_bonbon">Ajouter le produit</button>
+
+
+</form>
+
+<?php } ?>

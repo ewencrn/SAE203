@@ -1,7 +1,10 @@
-<?php include_once("header.php");
+<?php
+if(session_status() != PHP_SESSION_ACTIVE){
+    session_start();
+    } 
+include_once("header.php");
 if($_SERVER['REQUEST_METHOD'] === 'GET') {
     $confiserie = get_confis_by_id($_GET['confiserie_id']);
-    print_r($confiserie); 
 }
 
 ?>
