@@ -20,6 +20,8 @@ include_once("../header.php");
 </div>
 
 </form>
+</div>
+</div>
  
 <?php if(isset($_SESSION["message"])){
 echo("<p>".$_SESSION["message"]."</p>");
