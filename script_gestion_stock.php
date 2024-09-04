@@ -3,7 +3,7 @@ if(session_status() != PHP_SESSION_ACTIVE){
     session_start();
     }
 include_once("db.php");
-include_once("header.php");
+include_once("functions.php");
 
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
